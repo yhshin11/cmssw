@@ -33,8 +33,8 @@ std::vector< GetTrackTrajInfo::Result > GetTrackTrajInfo::analyze(const edm::Eve
   iSetup.get<TrackerRecoGeometryRecord>().get( tracker );    
 
   // This is also needed to extrapolate amongst the tracker layers.
-  edm::ESHandle<NavigationSchool> theSchool;
-  iSetup.get<NavigationSchoolRecord>().get("SimpleNavigationSchool",theSchool);
+  // edm::ESHandle<NavigationSchool> theSchool;
+  // iSetup.get<NavigationSchoolRecord>().get("SimpleNavigationSchool",theSchool);
   // NavigationSetter junk(*theSchool);  // FIXME FIXME
 
   // Get the magnetic field and use it to define a propagator for extrapolating the track trajectory.
